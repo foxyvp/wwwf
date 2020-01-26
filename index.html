@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="small.css"/>
+    <title>WWF</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="homepage">
+      <div class="header">
+        <div class="nav-menu_mobil">
+           <input type="checkbox" id="nav-menu_mobil_chexbox">
+           <label for="nav-menu_mobil_chexbox">МЕНЮ</label> 
+          <div class="burger_line"></div>
+          <div class="burger_line"></div>
+          <div class="burger_line"></div>
+          <div class="main_menu">
+            <a href="#">Дом</a>
+            <a href="#">Что мы делаем</a>
+            <a href="#">Втягивайся</a>
+            <a href="#">Наша планета</a>
+            <a href="#">Отдел новостей</a>
+          </div>
+        </div>
+         <div class="homepage-nav__menu">
+             <div class="homepage-nav__menu__logo">
+                <a href="#">
+                    <img  class="homepage-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX///8AAAArKikqKiny8vImJSSsrKz8/Pzl5eUYFhX39/fi4uIpKCfe3t7q6uqcnJwiISC5ubnLy8vV1dWjo6PY2NjAwMCQkJC1tbVhYWETERC/v7+ZmZlQUFBvb2+RkZFGRkY2NjY+Pj5/f398fHxcXFw4ODhzc3OIiIhfX19UVFQbGxsNCwhpaWgwMDBJSUnYoyWzAAARyElEQVR4nO1dCVfyOBemtOyIFRClboALr1L1//+7r03T7DdLk0Kd8z1z5swZjWluc3P33PZ658Bs/fyRR/nheDM9y/POjOl1HFH8G116PcHxGAlYXnpFYbFKRQKjaHjpRYXEWqbvv0Xim5LAKLq99MJC4RkgMEr/I+LmFSKwkKiXXlsQ3MMERlFy6dUFwEJHYPTWdNblzf3DbTfshicthY028eq11j2Hx0XwBbtioycwunaecfzFTfA9a2HVLjgYKIxdJ5RV62XF1a2BwChauU14VEwxH7ezeCtI1qiEO6f5ANV6QRv300jh3mW6O2iWy5H4YaTQRZpqxNbF5M3ATKG9cTrVzHIxA3BuptCewVRShuDYIhU6mJRFgSvbuWb6eRyFciiAbgWF9Vzf+nl2rRGhhdr1ZbG2nWpsmukym3hlWpb98TGq1qZWvCcMwtR6B20UT3tU6KBl038unoWRQHuZFRSwDvsZOqkwnTLEuG+LiBLJGtoOYBPnG8cnjMwUPvpSAWN8jLbgL/eqxbi7hRbGg5sR74Dpq/b1KcIYhyaeuVnxtEXhMIoyrSr6ElfS0GX9NVHoIJgdcFXYZU+6iNBVJi6kcaj7n4HCVlyol2LiV90Ambc8TI8ECp5XaD4xiPGHiTewXZqRjTz4RUivNKa89k03A4r13mgGJLUdsuytKxpfvB96DVIYPlqDovU6tUaMUiRaVtf/1iGim1cTNYHBzdLRk4lAEnP4CPvkqVqohnbyFyjs/KAZMSTPDh5DUXmKoQXpLC9n1QkZKkRbMKbkeEboh1QnTCe8qEAIzKMVxF18Djx/ReCTZgQj8dpJ9O44At8Dz17FEzKNJUPPYFsxsCSP2nvGoppcY5uwkdu2cqBMfCS0PTr6QdNqdDcbnGnPZ5tV64i2wTX9l0l+cN54m6Hom+/D+3X4FClOjmhiIqxCbsehaRX4iGlcPDY/lP+9cpIELx2WoyuWR1uMnLQFXHcAO7EjroCtG8USLsB6LoVHcH74pfJBzVHzKLyFfH7o79WtbfHK4RFc9YxTArsTWOKVw8HOJbeFf09V1FXMsCH2w1H454rWbvDCv8ERfCXB7mwrC4U6rA5703wg7M8xab2FsJzhT6Eh2ZUs14/rZadsnj1eOBzTEhxv3WSb2oPt0EYTawwMryU8gfBx7c0YDz20e94cpKoClJBCAB82C/ig7lcry3UH2aAdOEQIuIMxADGK5B8HDwISeQGTdGKeENrrXSTi8nW+JcgGgcdwyC/7BximCFhfqEyEB90g8IULiVBAgiiLpLqgM6gUgUaIlQTqKICw0Ri6/NW5QHyGX2jESli10jwXFEqNDviRU/NixLyesrgFKOTL21u5LahJDYr2rbBqlUQCq9z00vQcx5TGJkA9LhYkqOxzsARWk4a8Lw/I13XbnhhV5lDGUCrKUlEIEQi/t9m+HvKq3ckvT53KLB9ynURBozJppDEEUNSA81Z0OVDf9BqzNMgWk9SAYiBc1QRQKNxH0RTi+OpUZvmQ0yfdhFC8cfgionpWifNhEn0rhF9Na1HoAQWFYNE3UDYpp+tBieQbXn83UyjZ0wo7BaIQIFB1bAGROvL1M5l8K8QMe3EtCucdUBbQ21cVlQBFnqWt1ISwGux5gARaLK5FYZeqK++gWIBa8qrfcGlK+OgL9h4ApA+ljgKf8hil2Q1e5xGNpApqu3ipWZkNWK0EibOTuBSFf7gUx5SADjZgpKvLj8p35yNqHpgHQHapXGwmCwVVMToYa4OuVyi9spL/NZEvI1jugnwLmUIrdQGXhysaaSAoYwel9+2TB2IdI6hMSOJSFddId7M0d+qk2ukaKolSPt3HBWMZBppHpnCnGCVaNRr5B95UU2j9Ksbi4X5wFhkwj4KpVCP55JQ27g9VdStObpVw8MjHchQCClFxv0kVfUmYWxOpvtRnJJXAV1CEM990K7MBRyHgBijueyiD2SNi2BxN3gDQUEMhTKt34XEpiKMQkH6STRNBp2wxfN7tn14srmGpxalM4Uz77m3Ae0bqMSoKfcP1an9S5tJH78e9cE9QH2jlPcPmj0RQX1eTtdC++oXHbQQ+UKhmBiVH+SYHlRdIJLuxjgR4RF15btkpxygFX9b8mQjK6KPkXdTvwcNsu+EfodJzwP1H37o2OU8lB2TIo2EL0AjBJ1C5F5An4Bnke5BnlHx5coY8KBRCXjvFEOgquW+CVzYGRaONZoQ8KBRznwpbBAyFenaduxHnk1wLKgY9KBRj1QqrQloJgeeFGfEkinKGEQA+FP4Ij5FHwMHezC9UK7C/pKoYheJDoRgykS1AzfVOMONoB07YSLKZFRE+FIrrl/1sXVcOz4oZegB+ZO+BNRZ9whiSlS95odrmEJ4k3lZncatwfTmjxyeTLHXskjZRR2AU7T2zf4vlRmkN82/e55asbLEI3i2k8AlauWYtvHgvV0bqKyLUshva/0T6O/jTJEkaVPWLatrDP1QZ+fx05sZzUarOGyVv2CvJ5k9v66UDoYkYwPQyLhQBBe5oWVBYqA1FzkHa/J+jZUuQRS7+qU9YX9XbghOQxlZCFQ5SH2+V83CySXYq3qnfWZctYE7Y6JuUsjg+sJsPtGQxk6iKUvk14FElgpilWjSPoTgwJpFaj0JVfwTKTKSfSlI1LGQD/C4UFhQQ7wQQwvrtWKnfS7BaBQpGAYFZBgCUhLXqKOpEagJYiJrLWDZQONsRe7ZNjVVEnJi5xxKDaMRpAj5p50ehMrnJ+MKwfwiAC8NNGRZ4etV0z1hp2reEqxlicapPt7EhngT+1GBJ9q67gHH1IvqpHDx7KEFRinl9YqCEJgjBxior535BAZPcDo+mJ3jGS8A4zB6TqO28qQQv3Kepwq5crDbDx7fPg2S+qODZNhE4h5RE54MonpuFbHTBzXZU8PTQYAqjFAkGi5Z4IkzZMEf57EegvvE4Oj4qtWaA3pA092fj4NtCRa0Pa5SH3NzXWsYd4vBk8/i9+/l94w+ShmuU8InSlDAcs+20wUFEf/j2RWXkjtlUuNoWgG+KxLj+oX6XLbGv3Sv32Vw7TTpT2BCvj99ChOR7/bAZGj6ooIJvhxPTJw6aAoVvFqvh6xPQo8wavlcWnI+F+8JGV5vh3dvzVl2TaMLBk0CLYFpDyEFOVyFawfv+WwOFbgnRnHS34RH8O+wqAjWBwEdSZ1Y2qAz/Fhzv5oc0RTakLr2jIUPh3yemiclij/eX++Vmc/8KlLKZsfMmsOH5PxsCfGumPVETBCFuoTYwM86IED3bGsuAc8C3+AqhNZ0v4HOzdPPtS4S5SKwNdAUD0txTi0+bcAjzrch29QUG9hCnjmojTOvEhuaUE0ic2M0/dP60GYAGkRhHMA6Ck/EWqu2Euh9CSDCRGqdAm1f2l4GV0h96aBX2Xo+TQxqseaGNb/rgIXNZiehiQ+1CEWhlmz7ovzuqBZdzclAYXmUmPCycxCFQ8m0BPhDhkAgJ2BHdwti4dk03UPA1TfbqN5SuKGEs7kJxl6ZuCC8R7SV30I+vmFln19N+4lgHntnsdX7QHqIWtU+jxtYP/yjrCO0kJIEWX7NBiahGIU+hiMY6qBD4C0Hm55ZKrVH8WLi4YL2HoRvdGr/vhu7hu3o/JYQybVu1aqyfcoX51ZajmiRyBC/W1voLqO4xjJuIXLwGcV0hvg9+GFdA+IZ9xjOGVtpA6wsBQUubpo3WmSZBierLGmh9gULL2F4ox4mFsZYUFS64FrpJbqzFl4Sjtjq9mWQAsi8tDDwBfH2NJRO09Lk8g9qv6j4svpPLg2/3YllX3VJjUNP+oMc6x1f5+1F2+sbnqpMWBsumKotwNd1O3CPslEV7nwDWuzaVEra6ocCCqzUwf3Y+aulTUhgvugdjue+aVOXCulZ/0WrfU51KxwLOdRPZMjcrB6zlby9oDNQ6Zua4iWyozUrQtN26NgEJqEW4ozhlDVMbgyFkfAbAUh3np9a+m05kY202txt8K9mscPsqBRgPzIMdDRsmdG1hs3neL7bH7P5u+4GdpXR7zYeTbF2gCtRbt7HZzvyd8VGyWCgKraFOSGpQUWNxU6yFL8c2glMekJb5mmXUqQtdzhFcLkTRegOz3d3KxeJGsL+ZGDGegnEPO/I9BQSXfCI5iCaTpjuf/ShhDiITkBuNBjVzNkVhBxelSMSxVgZ35asmBA414sQc0jmXXdETDOyjUkSaaizvsxhrrrB3MkhwEEo333VGD/LY21JIrG914Pm1s59ym1pfwCQ8qAiU3HXjkztqJIremErQ0Itg8D3dd5Q/a0xty2yog0GvbU+e77u8fTUsxQ2XLRuvNpvlrOObR2GnNEJ/B/6ssErNtxbGPgumFknBlnItZ8PKmOE/c3CiBQABuhphKrYvjFu4ucVTwCK8y2L5by+Tl7/9vW9A65As12874gbun9erP6P23DCdJtPpf5S2/6NLmC7Gs9mMiXkn43Hxk/GC5b7FbdUiYoF+Q8cuFuVYPmA+q5Ri2W1QRpuUACCe3K/YEKFPPYLrKDrdMtmoOthCqm0Za62w0XfFyznmWYGcIKv+/+PsEnc0mfcR4gxbXOkA/+BEqvGSaN5PvwvLFP+mj4sMVvgH/ZjmO+/zuJ8Pi7ExHlv+Q5EGr0Y0YZHXz55Xzx5F5AdpnTB7PPX7g6/eTVb/6lQl+5fkj1OStfgtXtBk3RtO+krMJ8EukNhiPyD7UJ2frwF+53FeByXmc7TqK0p8lYRPCMn9DC8cbWsxE6Ew7g9SBtn5w6V3p3qRk8p9pW8/xWUZm5KQvDiVh/pt9PPqOH2mhEL8Nl6Lnwx27CyD92+K53/nlzW3hNPKhRUYU77tV0O2KWbDa/I2TlVyhXkblfCZpsV2Z/fMb+Ls4iGMD8SV5b85qom5rVmvEChop9BRzcuE2FWOf9EfVIHDmuS4fhv3GT6/iELE7lmYC5QeqNi0WEw8Qc7Pv1O9trjaqfWkH2MCKjYtf1nl0j6K/48rYZkj8fpV/OBUbmdJYXWeL0/hbV5L87TUaqN0TmUE2qmSLHxGKZuit7HMqSJA4nVc6IgY7Tzl38tzae+nJqmfF+xFVUL5g8LjW+V0mTMiTdOy3PKY0qFI2byc6uPMUHjxPUTLwospBOLTgK4abd0xZdTdb/3b+SnpJTkztFQR6GVVvM5ImstTSNVceqyFScWlcbEfiAyiGa/r4xVnN+UBZXB67G3y8jQjfdApLqVqbp5WcmaAKSzO1LQko1YbrCopthX9HdnywS/a/7Sq+Gb04de2UITbbaELz27O1GDY9KbkswHhxf7k/jAn2q/Ejv5qg4j4Jaf4hIw4bLIyVhuxafKLZUcpm5bbVax9PKnN5mJ9MScsStVRj5yX4ndDJNMcDccZNpVdOoA+Ttg+9qx0KU/jNuVWxhRPjDnp0s8eehn3gwluO1BRGHN7GKIPTUM8ci+80N33ZNmlOs/Yix9P5JCW2zYY9Z5T1j3KsN1JNf7g8/kZ2aTHC2aAr9iNKflsGlWCBpEy5/o0UwFaEH8qfMqHDFt95X/SOjXTLVnKyg/MZ58Mm5445hozh7afFzpweiKypnC46nquTmn8XuXicnxWsmnMkMHgl9imWHQ8p0QuDUgSuGsUUmsM81nCCHtBAjJ6PkP9aB6orJmQDGnXKGR924rPiDSNM6Eh3piqh+pjsiN6inNy5jpHIWHTAY4UEWk6P4mWCLFcT1iDf9dvI6Uht+EkjjtF4azeh5rPiFV9kgwRwqZ1tnBTj81pxVPn9rCUpjHHZzWb5lKAc1EFCmMc9cChi1KtMJHCLnnAFa4rG4RGBTGbEjIYYDbNSD60UPolOYz52sE9xNKU6LNCms55MigqNp2Ttvw9bJuy9wm7R2Gl9KmbhOWHLGd6dRQ5pRdjq8A5a74SCuPuUIjY9MR0nUbhjFTZpgqxKXt98C3l5Uwn9xDZpjmzmnJjYvUtyJJNB+w1oNIznPdZw3qY1XuYd4XC3tepP+Fao79l/VTdwjjJB3O+7qKf9nOuAv8qmleGezrvTI442Q6euUM3PfY/gfe/OvwIn/36+hH05vDjB+3hLkg67X92pv0YdWROlQAAAABJRU5ErkJggg==">
+                </a>
+             </div>
+           <ul class="homepage-nav__menu__list">
+               <li class="nav__menu__list">
+                   <a href="#">ЧТО МЫ ДЕЛАЕМ</a>
+                    <ul class="homepage-nav__menu__item">
+                       <li>
+                           <a href="#">Вид</a>
+                       </li>
+                       <li>
+                        <a href="#">ОКЕАНЫ</a> 
+                       </li>
+                       <li>
+                        <a href="#">ПИТАНИЕ</a>
+                       </li>
+                       <li>
+                        <a href="#">КЛИМАТ</a>
+                       </li>
+                       <li>
+                        <a href="#">ПЕРЕСТРОЙТЕ ЙОРК</a>
+                       </li>
+                       <li>
+                        <a href="#">2 МИЛЛИАРДА ДЕРЕВЬЕВ</a>
+                       </li>
+                   </ul>
+               </li>
+               <li class="nav__menu__list">
+                  <a href="#">ВТЯГИВАТЬСЯ</a>
+                  <ul class="homepage-nav__menu__item">
+                    <li>
+                        <a href="#">ЧЕРЕЗВЫЧАЙНЫЕ СИТУАЦИИ С ЛЕСНЫМ ПОЖАРОМ </a>
+                    </li>
+                    <li>
+                      <a href="#">ПЛАСТИЧЕСКОЕ ЗАГРЯЗНЕНИЕ</a> 
+                    </li>
+                    <li>
+                      <a href="#">ЧИСТЫЙ СЕВЕР</a>
+                    </li>
+                    <li>
+                      <a href="#">ЧАС ЗЕМЛИ</a>
+                    </li>
+                    <li>
+                      <a href="#">ПОДУМАЙ ПРЕЖДЕ ЧЕМ КУПИТЬ</a>
+                    </li>
+                    <li>
+                      <a href="#">ИЗМЕНИ СВОЙ ОБРАЗ ЖИЗНИ</a>
+                    </li>
+                </ul>
+              </li>
+              <li class="nav__menu__list">
+                <a href="#">НАША ПЛАНЕТА</a>
+                <ul class="homepage-nav__menu__item">
+                    <li>
+                        <a href="#">ОБРАЗОВАНИЕ</a>
+                    </li>
+                    <li>
+                      <a href="#">ЧТО Я МОГУ СДЕЛАТЬ?</a> 
+                    </li>
+                    <li>
+                      <a href="#">ЧТО Я МОГУ СДЕЛАТЬ</a>
+                    </li>
+                    <li>
+                      <a href="#">ОБНАРУЖИТЬ</a>
+                    </li>
+                </ul>
+              </li>
+              <li class="nav__menu__list">
+                <a href="#">ОТДЕЛ НОВОСТЕЙ</a>
+                <ul class="homepage-nav__menu__item">
+                 <li>
+                    <a href="#">НОВОСТИ</a>
+                 </li>
+                 <li>
+                   <a href="#">БЛОГ</a> 
+                 </li>
+                </ul>
+              </li>
+              <li class="nav__menu__list">
+                <a href="#">ЦЕНТР ЗНАНИЙ</a>
+                <ul class="homepage-nav__menu__item">
+                    <li>
+                        <a href="#">ПЛАНЕТА</a>
+                    </li>
+                    <li>
+                        <a href="#">ОТЧЕТ ЖИВОЙ ПЛАНЕТЕ</a>
+                
+                    </li>
+                    <li>
+                        <a href="#">ГОДОВОЙ ОТЧЕТ</a>
+                    </li>
+                    <li>
+                        <a href="#">БИБЛИОТЕКА РЕСУРСОВ</a>
+                    </li>
+                </ul>
+              </li>
+              <li class="nav__menu__list">
+                <a href="#">О НАС</a>
+              </li>
+              <li class="nav__menu__list">
+                   <a class="nav__menu__animal" href="#">УСЫНОВИТЬ ЖИВОТНОЕ</a>
+              </li>
+              <li class="nav__menu__list">
+                   <a  class="nav__menu__donat" href="#">СДЕЛАТЬ ПОЖЕРТВОВАНИЕ</a>
+                 </li>
+              </li>
+          </ul>
+          </div>
+          </div>
+          <div class="nav-menu__right">
+           <div class="nav-menu__search">
+             <a href="https://www.google.ru/?hl=ru">
+                <img class="nav-menu__search_img" src="images/noun_Search_15028 (1).png">
+             </a>
+          </div>
+         <div class="nav-menu__news">
+             <a>
+               <img src="images/noun_Newspaper_2502299.png">
+             </a>
+         </div>
+        <div class="nav-menu__country">
+            <a href="#"><img src="images/index.html.png"></a>
+            <span>Австралия</span>
+        </div>
+      </div>  
+       <div class="homepage_coneiner__content">
+           <h1>АВСТРАЛИЯ ЭКСТРЕННЫЙ ПОЖАР</h1>
+           <h3>Австралия находится в тисках общенациональной чрезвычайной ситуации, связанной с лесным пожаром.<br> Можете ли вы помочь нам сохранить дикую природу, а также защитить и восстановить родные кустарники?</br></h3>
+          <div class="homepage_content_link">
+             <div class="homepage_content_link_button">
+               <a href="#">READ MORE</a>
+               <a href="#">
+                <img src="images/Blank page 1.png">
+              </a>
+              </div>
+             <div class="homepage_content_link_button">
+               <a href="#">GIVE NOW</a>
+               <a href="#">
+                <img src="images/Blank page 1.png">
+              </a>
+             </div>
+          </div>
+          <div class="homepage_content_arrow">
+             <a>
+               <img src="images/Blank page.png">
+             </a>
+          </div>
+       </div>
+   </div>
+   <main>
+     <div class="secion_Whatwedo">
+       <h2 class="secion_Whatwedo__title">Мы строим будущее, в котором люди живут в гармонии с природой</h2>
+       <a href="https://www.wwf.org.au/what-we-do" class="secion_Whatwedo__link">Что мы делаем</a> 
+       <div class="secion_Whatwedo__list">
+        <ul class="Whatwedo__list_item">
+          <li class="Whatwedo__item_Species" >
+            <div class="Whatwedo__link_item">
+             <a href="https://www.wwf.org.au/what-we-do/species">
+              <img src="https://images.unsplash.com/photo-1527436826045-8805c615a6df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+             </a>
+             <a class="Whatwedo__link_item_Species" href="https://www.wwf.org.au/what-we-do/species">Вид</a>
+          </div>
+          </li>
+          <li>
+            <div class="Whatwedo__link_item">
+             <a href="https://www.wwf.org.au/what-we-do/oceans/protect-our-oceans">
+              <img src="https://images.unsplash.com/photo-1559825481-12a05cc00344?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+             </a>
+             <a class="Whatwedo__link_item_Oceans" href="https://www.wwf.org.au/what-we-do/oceans/protect-our-oceans">Океан</a>
+            </div>
+          </li>
+          <li>
+            <div class="Whatwedo__link_item">
+             <a href="https://www.wwf.org.au/what-we-do/food">
+               <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+             </a>
+             <a class="Whatwedo__link_item_Food" href="https://www.wwf.org.au/what-we-do/food">Еда</a>
+             </div>
+           </li>
+          <li>
+            <div class="Whatwedo__link_item">
+             <a href="https://www.wwf.org.au/what-we-do/climate">
+              <img src="https://images.unsplash.com/photo-1464039397811-476f652a343b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+             </a>
+              <a class="Whatwedo__link_item_Climate" href="https://www.wwf.org.au/what-we-do/climate">Климат</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+     </div>
+     <div class="section-Getinvolved">
+       <div class="section-Getinvolved__header">
+         <div class="Getinvolved__header_img">
+           <img src="images/noun_monkey_1055201.png">
+         </div>
+         <div class="Getinvolved__header">
+           <h3>Втягиваться</h3> 
+         </div>
+         <div class="Getinvolved_line"></div>
+       </div>
+       <div class="section-Getinvolved__content">
+          <div class="Getinvolved-content__forest">
+            <a href="#">
+              <div class="Getinvolved-content__forest_img">
+                <h3>Что еще вы можете сделать, чтобы поддержать восстановление лесного пожара?</h3>
+              </div>
+              <div class="Getinvolved-content__details">Подробнее</div>
+            </a>
+          </div>
+          <div class="Getinvolved-content__recovery">
+             <a href="#">
+               <div class="Getinvolved-content__recovery_img">
+                 <h3>На пути к двум миллиардам деревьям</h3>
+                 <p>Вместе мы можем спасти и вырастить два миллиарда деревьев к 2030 году</p>
+               </div>
+               <div class="Getinvolved-content__details">Подробнее</div>
+             </a>
+          </div>
+          <div class="Getinvolved-content__tree">
+            <a href="#">
+              <div class="Getinvolved-content__tree_img">
+                <h3>ЧРЕЗВЫЧАЙНАЯ СИТУАЦИЯ С ЛЕСНЫМ ПОЖАРОМ</h3>
+                <p>Австралия охвачена общенациональной чрезвычайной ситуацией</p>
+              </div>
+              <div class="Getinvolved-content__details">Подробнее</div>
+            </a> 
+          </div>
+       </div>
+    </div>
+    <div class="secion-form">
+      <div class="secion-form__img"></div>
+      <div class="secion-form__input">
+         <div class="secion-form__header">
+           <img src="images/noun_Bird_626607.png">
+           <h1>Жертвовать</h1>
+           <div class="secion-form__header_line"></div>
+           <p>Когда вы щедро даете сегодня, вы становитесь важной частью важной работы WWF Австралии по сохранению.</p>
+           <div class="secion-form__delimiter"></div>
+         </div>
+         <div class="secion-form__field">
+           <form  method="get">
+              <label class="form-money">
+               <input class="form-moneydonat__chexbox" type="checkbox" name="question-one" value="p">
+               <span class="form-moneydonat__fake"></span>
+               <span class="form-moneydonat">Разовое пожертвование</span>
+              </label>
+              <label>
+               <input class="form-moneydonat__chexbox" type="checkbox" name="question-one" value="p">
+               <span class="form-moneydonat__fake"></span>
+               <span class="form-moneydonat">Ежемесячное пожертвование</span>
+              </label>
+               <br>
+               <input  class="form_moneydonat_mail" type="text" name="email" placeholder="E-mail">
+               </br>
+              <label>
+                 <br>
+              <label>
+                <input class="form-moneysum__radio" type="radio" name="question-one" value="p">
+                <span class="moneysum__fake__100">100$</span>
+              </label>
+              <label>
+                <input class="form-moneysum__radio" type="radio" name="question-one" value="p">
+                <span class="moneysum__fake__200">200$</span>
+              </label>
+              <label>
+                <input class="form-moneysum__radio" type="radio" name="question-one" value="p">
+                <span class="moneysum__fake__500">500$</span>
+              </label>
+                </br>
+              </label>
+               <a href="#">
+                 <div class="secion-form__button">
+                   <h2>Жертвовать</h2>
+                   <img src="images/Blank page 1.png">
+                 </div>
+               </a>
+           </form>
+          </div>
+      </div>
+    </div>
+    <div class="secion-news">
+      <div class="secion-news__header">
+         <div class="news__header__logo">
+          <img src="images/noun_turtle_346690.png">
+         </div>
+         <div class="news__header">
+           <h1>Главные новости</h1>
+         </div>
+        <div class="news__heade__liner"></div>
+      </div>
+      <div class="secion_news_block">
+       <div class="secion-news__official">
+         <div class="news__official_img">
+           <div class="news__official_background">
+              <h3>Заявление WWF-Австралия о чрезвычайной ситуации в Австралии по поводу лесного пожара</h3>
+              <p>
+                Лесной пожар на Холлис Пойнт в Новом Южном Уэльсе © Martin Von Stoll
+                Домотдел новостейНовости2020.
+              </p>
+            </div>
+            <div class="news__official_background_details">
+             <a href="#">Подробнее</a>
+            </div>
+         </div>
+         <div class="news__wwf">
+         <div class="news__wwf_background">
+          <h3>Заявление WWF-Австралия о чрезвычайной ситуации в Австралии по поводу лесного пожара</h3>
+          <p>
+            Лесной пожар на Холлис Пойнт в Новом Южном Уэльсе © Martin Von Stoll
+            Домотдел новостейНовости2020.
+          </p>
+         </div>
+         <div class="news__wwf_background_details">
+         <a href="#">Подробнее</a>
+         </div>
+         </div>
+         <div class="news__ecology">
+         <div class="news__ecology_background">
+          <h3>Заявление WWF-Австралия о чрезвычайной ситуации в Австралии по поводу лесного пожара</h3>
+          <p>
+            Лесной пожар на Холлис Пойнт в Новом Южном Уэльсе © Martin Von Stoll
+            Домотдел новостейНовости2020.
+          </p>
+        </div>
+         <div class="news__ecology_background_details">
+            <a href="#">Подробнее</a>
+          </div>
+         </div>
+       </div>
+      </div>
+      <div class="morenews">
+        <a href="#">Больше новостей</a>
+        <div class="morenews__img">
+          <a>
+            <img src="images/Blank page 2.png">
+         </a>
+        </div>
+      </div>
+     </div>
+     <div class="secion-gallery">
+       <div class="gallery_content">
+         <div class="gallery_content_link">
+           <div class="gallery_content_link_item">
+             <h1>На фотографиях:</h1>
+             <p class="gallery-block__line"></p>
+             <h3>ГАЛЕРЕЯ НЕДЕЛИ</h3>
+             <p>Живописный остров Мильман является домом для проекта по охлаждению черепах.
+             <br>Вот что включает в себя обычный день на острове ......</br></p>
+             <div class="gallery_link">
+              <a href="https://www.wwf.org.au/news/blogs/in-photos-marooned-on-milman">ПОСМОТРЕТЬ ГАЛЕРЕЮ</a>
+              <a href="https://www.wwf.org.au/news/blogs/in-photos-marooned-on-milman"><img src="images/Blank page 1.png"></a>
+             </div>
+            </div>
+         </div>
+       </div>
+        <div class="gallery_block"></div>
+      </div>
+      <div class="secion-Invideo">
+        <div class="Invideo_block">
+          <a href="https://youtu.be/c1lIwtDXYjw"><img src="images/noun_play_631703.png"></a>
+        </div>
+          <div class="Invideo_block_link">
+            <div class="Invideo_block_link_item">
+              <h1>В видео:</h1>
+              <div class="Invideo_block_line"></div>
+              <div class="Invideo_block_logo">
+                <img src="images/акула.png">
+                <h4>10 удивительных видов акул | WWF-Австралия</h4>
+              </div>
+              <p>Акулы играют жизненно важную роль в уравновешивании экосистемы. <br>Пришло время обменять свой страх на очарование и полюбоваться на этих великолепных видов акул ...</br></p>
+              <a class="Invideo_block_button" href="https://youtu.be/c1lIwtDXYjw">СМОТРЕТЬ ВИДЕО</a>
+            </div>
+          </div>
+      </div>
+     <div class="secion-formblock">
+       <div class="formblock_input">
+         <div class="formblock_input_item">
+            <h1>Получать обновления</h1>
+            <p>Зарегистрируйтесь, и мы будем держать вас в курсе последних новостей о работе WWF по защите дикой природы и мест обитания, находящихся под угрозой исчезновения, и о том, как вы можете реально изменить их будущее.</p>
+            <form action="#" method="get">
+             <br>
+             <input class="formblock_name" type="text" name="Имя" value="Имя">
+             <input class="formblock_name" type="text" name="Фамилия" value="Фамилия">
+              <br>
+             <input class="formblock_email" type="text" name="E-mail" value="E-mail">
+             <label class="formblock_field" for="password-field"></label>
+             <input class="formblock_password" type="text" name="password" id="password-field" value="Ваш пароль">
+             </br>
+             <input class="formblock_submit" type="submit" value="Отправить">
+            </form>
+          </div>
+       </div>
+       <div class="formblock_img"></div>
+     </div>
+     <div class="secion_footer">
+       <div class="footer_list">
+          <ul class="footer-nav_menu">
+            <li>
+              <a><img src="data:image/png;base64,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"></a>
+            </li>
+          <li>
+           <a href="#">Работы</a>
+          </li>
+          <li>
+           <a href="#">Конфинденциальность</a>
+           </li>
+          <li>
+           <a href="#">Полисы</a>
+           </li>
+           <li>
+           <a href="#">Условия использования сайта</a>
+           </li>
+          <li>
+           <a href="#">Вопрос-ответ</a>
+         </li>
+         <li>
+           <a href="#">Обновите свои данные</a>
+         </li>
+         <li>
+          <a href="#">Связаться с нами</a>
+         </li>
+        </ul>
+      </div>
+       <div class="footer_conent">
+         <div class="footer_conent_paragraph">
+           <p>WWF является одной из самых надежных природоохранных организаций Австралии. В WWF мы работаем в Австралии и на нашем азиатско-тихоокеанском заднем дворе, чтобы защитить исчезающие виды и места обитания, решить проблему изменения климата и построить мир, в котором люди живут в гармонии с природой. Это было бы невозможно без финансовой поддержки нашего сообщества. Спасибо! Если вы хотите помочь нам,<a class="footer_donat" href="#"> пожалуйста,сделайте пожертвование</a>.</p>
+           <p class="footer_guarantees">Все пожертвования в размере 2 долларов США и более в WWF-Австралия не облагаются налогом. Для вашего удобства мы отправим вам одну квитанцию ​​в конце финансового года на общую сумму ваших налоговых вычетов.
+          Зарегистрированный номер благотворительной организации: ACN 001 594 074 | Номер лицензии NSW: CFN 13143</p>
+        </div>
+       </div>
+     </div>
+   </main>
+</div> 
+</body>
+</html>

@@ -1,0 +1,238 @@
+@media screen and (max-width: 600px) {
+    body{
+        padding: 0;
+        margin: 0 auto;
+        height: auto;
+    }
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .homepage{
+        width:500px;
+        height: 100%;
+        background: url(images/noun_Arrow_2513133.png) no-repeat;
+        background-size: 100%;
+    }
+    .homepage-nav__menu{
+        display: none;
+    }
+    .nav-menu__right{
+        display: none;
+    }
+    .homepage_coneiner__content h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin:30px;
+    
+    }
+    .homepage_coneiner__content{
+      width: 100%;
+      height: 300px;
+      margin:0;
+
+    }
+    .homepage_coneiner__content h3{
+        display: none;
+    }
+    .homepage_content_link{
+        width: 100%;
+        height: 30px;
+       margin:auto;
+       justify-content: space-around;
+    }
+    .homepage_content_link_button{
+        margin:0;
+    }
+    .homepage_content_link_button{
+        width: 150px;
+        height: 30px;
+    }
+    .homepage_content_link_button a{
+        font-size: 10px;
+         padding: 10px;
+         line-height: bold;
+    }
+    .homepage_content_link_button img{
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+      
+    }
+    .homepage_content_link_button img{
+        width: 60px;
+        height: 60px;
+      
+    }
+    .homepage_content_arrow{
+        width: 100%;
+        height: 70px;
+    }
+    .homepage_content_arrow img{
+        width: 100px;
+        height: 100px;
+      
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+    }
+    .secion_Whatwedo { 
+        width: 100%; 
+        height: 250px;
+    }
+    .secion_Whatwedo h2{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .secion_Whatwedo a{
+        font-size: 18px;
+    }
+    .secion_Whatwedo__list{
+        width: 300px;
+        height: 200px;
+        margin: auto;
+    }
+    .Whatwedo__list_item {
+        margin-top: 20px;
+    }
+    .Whatwedo__list_item img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    
+    .Whatwedo__link_item {
+        width: 80px;
+        height: 80px;
+    }
+    .Getinvolved-content__forest {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
+       
+    }
+    .Getinvolved-content__details {
+        padding: 20px;
+        width:372px;
+        height: auto;
+        font-size: 18px;
+    }
+    .Getinvolved-content__recovery {
+        width: 100%;
+        height: 100%;
+    }
+    .Getinvolved-content__tree {
+        width: 100%;
+        height: 100%;
+    }
+    .Getinvolved-content__tree_img {
+        width: 100%;
+        height: 100%;
+    }
+    .Getinvolved__header_img img{
+        width: 80px;
+        height: 80px;
+    }
+    .section-Getinvolved{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    .Getinvolved__header h3{
+        margin:0 auto;
+        margin-bottom: 10px;
+    }
+    
+    .section-Getinvolved__header {
+        font-size: 18px;
+        width: 100%;
+        height: 150px;
+        margin: 28px auto;
+    }
+    .section-Getinvolved__content{
+        width: 100%;
+        height: 1800px;
+        display: flex;
+        flex-direction: column;
+     
+}
+.Getinvolved-content__forest_img {
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Getinvolved-content__recovery_img{
+    font-size: 14px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+   .secion-form {
+     width: 100%;
+     height: 1120px;
+     display: flex;
+     flex-direction: column;
+     justify-content: stretch;
+}
+
+.secion-form__img {
+    width: 100%;
+    height: 100%;
+}
+.secion-form__input{
+
+    width: 100%;
+    height: 100%;
+}
+
+.secion-form__header {
+    width: 250px;
+    font-size: 20px;
+    align-items: center;
+    margin-top: 10px;
+    margin: 10px auto 0;
+}
+.secion-form__field{
+    width: 100%;
+    height: 60%;
+    margin: 0;
+    
+}
+.form_moneydonat_mail{
+    width: 200px;
+    height: 30px;
+    opacity: 0.5;
+    margin-top: 15px;
+}
+
+
+.secion-news__header {
+    margin: 30px auto 0;
+    width: 100%;
+    height: 200px;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.secion-news__official {
+    width: 100%;
+    height:1800px;
+    margin: auto;
+}
+.secion-gallery{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+}
